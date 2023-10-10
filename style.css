@@ -66,13 +66,13 @@ input:focus-visible {
 
 button {
     background-color: #cfa471;
-    color: #fff;
+    color: #14181b;
     padding: 20px 80px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     font-family: Roboto, Arial, sans-serif;
     margin: 0 auto;
 }

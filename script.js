@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
         url = decoded.iss;
         email = decoded.email;
     } catch (error) {
-        mostrarAlerta("Hubo un error, por favor vuelta a solicitar el correo de recuperación.");
+        mostrarAlerta("Hubo un error, por favor vuelve a solicitar el correo de recuperación.");
         buttonSubmit.setAttribute("disabled", "disabled");
         passwordInput.setAttribute("readonly", "true");
         confirmPasswordInput.setAttribute("readonly", "true");
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(response => response.json())
             .then(data => {
                 if (data.msg && data.msg.includes("expired")) {
-                    mostrarAlerta("El link ha expirado, por favor vuelta a solicitar el correo de recuperación.");
+                    mostrarAlerta("El link ha expirado, por favor vuelve a solicitar el correo de recuperación.");
                 } else if (data.msg && data.msg.includes("different")) {
                     mostrarAlerta("La contraseña debe de ser diferente a  la anterior.");
                 } else if (data && data.id) {
@@ -77,12 +77,12 @@ document.addEventListener('DOMContentLoaded', function() {
                     passwordInput.value = "";
                     confirmPasswordInput.value = "";
                 } else {
-                    mostrarAlerta("Hubo un error, por favor vuelta a solicitar el correo de recuperación.");
+                    mostrarAlerta("Hubo un error, por favor vuelve a solicitar el correo de recuperación.");
                 }
             })
             .catch(error => {
                 console.log(error);
-                mostrarAlerta("Hubo un error, por favor vuelta a solicitar el correo de recuperación.");
+                mostrarAlerta("Hubo un error, por favor vuelve a solicitar el correo de recuperación.");
             }).finally(() => {
                 buttonSubmit.removeAttribute("disabled");
                 passwordInput.removeAttribute("readonly");
