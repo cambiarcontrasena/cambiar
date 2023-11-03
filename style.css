@@ -60,13 +60,13 @@ input {
 }
 
 input:focus-visible {
-    border: 2px #cfa471 solid;
+    border: 2px #14181B solid;
     outline: none;
 }
 
 button {
-    background-color: #cfa471;
-    color: #14181b;
+    background-color: #14181B;
+    color: #f1f4f8;
     padding: 20px 80px;
     border: none;
     border-radius: 5px;
@@ -84,7 +84,7 @@ button {
 }
 
 button:hover {
-    background-color: #cfa471;
+    background-color: #14181B;
 }
 
 .alerta {
